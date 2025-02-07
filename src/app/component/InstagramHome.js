@@ -21,7 +21,7 @@ const InstagramHome = () => {
   }, []);
 
   return (
-    <div className="container mx-auto p-4">
+    <div className="container mx-auto p-4 bg-slate-100">
       {/* Top Bar */}
       <section className="flex justify-between items-center py-2 border-b">
         <button className="text-gray-700">&#8592;</button>

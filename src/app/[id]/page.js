@@ -56,7 +56,7 @@ const Page = ({ params }) => {
 
   return (<>
 
-    <section className="flex justify-between items-center py-2 border-b">
+    <section className="flex justify-between items-center py-2 border-b bg-slate-100">
             <Link href="/" className="text-gray-700">&#8592;</Link>
             <div className="flex items-center gap-2">
               <h1 className="text-lg font-semibold">Instagram</h1>
@@ -69,8 +69,8 @@ const Page = ({ params }) => {
             </div>
             <Link href="/" className="text-gray-700">&#8942;</Link>
           </section>
-    <div className="flex justify-center py-2 h-screen">
-      <div className="relative bg-white rounded-lg w-96 h-[680px] mx-auto">
+    <div className="flex justify-center py-2 h-screen  bg-slate-100">
+      <div className="relative  bg-slate-100 rounded-lg w-96 h-[680px] mx-auto">
         <div className="w-full">
           <Image
             src={postData?.media_url}
@@ -81,7 +81,7 @@ const Page = ({ params }) => {
           />
         </div>
 
-        <div className="flex items-center justify-between p-4">
+        <div className="flex items-center justify-between p-4  bg-slate-100">
           <div className="flex space-x-4">
             <i className="bi bi-heart text-2xl cursor-pointer"></i>
             <i
@@ -93,8 +93,8 @@ const Page = ({ params }) => {
           <i className="bi bi-bookmark text-2xl cursor-pointer"></i>
         </div>
 
-        <div className="px-4">
-          <h4 className="text-sm font-bold flex items-center">
+        <div className="px-4  bg-slate-100">
+          <h4 className="text-sm font-bold flex items-center  bg-slate-100">
             <img
               src="https://picsum.photos/20"
               alt="User"
@@ -102,7 +102,7 @@ const Page = ({ params }) => {
             />
             Liked by Gandijuha and 104,424 others
           </h4>
-          <h4 className="text-sm font-bold mt-2">
+          <h4 className="text-sm font-bold mt-2  bg-slate-100">
             {postData?.username} {" : "}
             <span className="text-sm text-gray-500">{postData?.caption}</span>
           </h4>
@@ -156,7 +156,7 @@ const Page = ({ params }) => {
               value={newComment}
               onChange={(e) => setNewComment(e.target.value)}
             />
-            <button type="submit" className="text-blue-500 text-sm font-semibold">
+            <button type="submit" className=" p-2 border bg-black border-black-700 text-white hover:bg-white hover:borderwhite-700 hover:text-black  text-sm font-semibold">
               Post
             </button>
           </form>
