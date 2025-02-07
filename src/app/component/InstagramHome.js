@@ -21,11 +21,11 @@ const InstagramHome = () => {
   }, []);
 
   return (
-    <div className="container mx-auto p-4 bg-slate-100">
+    <div className="container mx-auto sm:p-0 lg:p-2 2xl:p-4 bg-slate-100">
       {/* Top Bar */}
       <section className="flex justify-between items-center py-2 border-b">
         <button className="text-gray-700">&#8592;</button>
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-1">
           <h1 className="text-lg font-semibold">Instagram</h1>
           {Instagrampost && (
             <Image
