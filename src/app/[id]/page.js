@@ -56,7 +56,7 @@ const Page = ({ params }) => {
 
   return (<>
 
-    <section className="flex justify-between items-center py-2 border-b bg-slate-100">
+    <section className="flex justify-between items-center p-2 border-b bg-slate-100">
             <Link href="/" className="text-gray-700">&#8592;</Link>
             <div className="flex items-center gap-2">
               <h1 className="text-lg font-semibold">Instagram</h1>
