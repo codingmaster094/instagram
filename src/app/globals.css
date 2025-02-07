@@ -15,7 +15,7 @@
 }
 
 body {
-  width: 350px !important;
+  width: 400px !important;
   margin: 0 auto;
   color: var(--foreground);
   background: var(--background);
