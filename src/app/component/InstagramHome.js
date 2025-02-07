@@ -82,7 +82,7 @@ const InstagramHome = () => {
         </button>
         <button className="border px-4 py-2 rounded">Message</button>
         <button className="border px-4 py-2 rounded">
-          <i className="material-icons">keyboard_arrow_down</i>
+          &#9660;
         </button>
       </section>
 

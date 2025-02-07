@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import Image from 'next/image';
 import EmojiPicker from 'emoji-picker-react';
+import Link from 'next/link';
 
 const Page = ({ params }) => {
   const [postData, setPostData] = useState(null);
@@ -53,8 +54,22 @@ const Page = ({ params }) => {
     fetchComments(); // Load comments on component mount
   }, [params.id]);
 
-  return (
-    <div className="flex justify-center items-center h-screen">
+  return (<>
+
+    <section className="flex justify-between items-center py-2 border-b">
+            <Link href="/" className="text-gray-700">&#8592;</Link>
+            <div className="flex items-center gap-2">
+              <h1 className="text-lg font-semibold">Instagram</h1>
+                <img
+                  src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2053557/kisspng-social-media-instagram-verified-badge-symbol-compu-5b1eedb5aba638.1612204615287535897031.jpg"
+                  width={20}
+                  height={20}
+                  className="rounded-full"
+                />
+            </div>
+            <Link href="/" className="text-gray-700">&#8942;</Link>
+          </section>
+    <div className="flex justify-center py-2 h-screen">
       <div className="relative bg-white rounded-lg w-96 h-[680px] mx-auto">
         <div className="w-full">
           <Image
@@ -148,6 +163,7 @@ const Page = ({ params }) => {
         </div>
       </div>
     </div>
+  </>
   );
 };
 
